@@ -1,14 +1,5 @@
 
-
-    // $(".regular").slick({
-    //   dots: true,
-    //   infinite: true,
-    //   slidesToShow: 3,
-    //   slidesToScroll: 3
-    // });
-		
-
-		$(function(){
+$(function(){
    $('.timeline-nav').slick({
       slidesToShow: 12,
       slidesToScroll: 1,
@@ -17,7 +8,7 @@
       focusOnSelect: true,
        mobileFirst: true,
       arrows: false,
-      infinite:true,
+      infinite:false,
        responsive: [
            {
           breakpoint: 768,
