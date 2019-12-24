@@ -14,6 +14,7 @@ section {
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
+	position: relative;
 }
 
 h2 {
@@ -59,6 +60,14 @@ h2 {
 }
 
 .slick-slide img {
+	margin: 0 auto;
+}
+
+.slick-dots {
+	bottom: 0;
+}
+
+.timeline-slide img {
   width: 45%;
   height: auto;
   top: 24%;
@@ -282,6 +291,21 @@ h2 {
   	right: 78%;
     top: 0%;
   }
+}
+
+/*slideshow*/
+
+.slideshow {
+	width: 100%;
+}
+
+.single-item {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.slideshow__item {
+	width: 100%;
 }
 
 
