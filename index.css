@@ -25,26 +25,49 @@ h2 {
     font-size: 1.8em;
 }
 
+.landing {
+	background-image: url("images/rnm-header.png");
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .title {
 	position: absolute;
-	right: 15%;
-	top: 20%;
+	right: 2%;
+	top: 3%;
 	color: #fff;
-	width: 35%;
+	width: 60%;
 }
 
 .lp-title {
-	border: 1px solid;
-    height: 40vh;
+    height: 28vh;
     margin: 10px;
+}
+
+.lp-title img {
+	width: 100%;
+
+}
+
+.title-copy {
+	width: 45%;
+    margin: 0 auto;
+    margin-top: 25%;
 }
 
 .logo {
 	text-align: center;
+	position: absolute;
 }
 
 .logo img {
 	width: 100px;
+	margin: 10px
+}
+
+.logo img:last-child {
+	width: 80px;
 }
 
 
@@ -249,14 +272,35 @@ h2 {
 
 @media (max-width: 500px) {
 
+
+  .landing {
+  	background-position: unset;
+  }
+
   .title {
 	position: absolute;
-    right: 5%;
-    bottom: 5%;
+	right: 0;
+    bottom: 0%;
     top: unset;
     color: #fff;
-    width: 90%;
+    width: 100%;
   }
+
+  .title-copy {
+	width: 100%;
+    margin: 0 auto;
+    padding: 9%;
+    background-color: #000;
+  }
+
+  .lp-title {
+	margin: 0;
+  }
+
+ /* .lp-title img {
+  	width: 600px;
+  }*/
+
   .timeline-slide__content {
     width: 100%;
   }
