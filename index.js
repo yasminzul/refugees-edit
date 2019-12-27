@@ -54,13 +54,6 @@ $(function(){
 });
 
 
-$('.single-item').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1
-});
-
 /* video */
 
 // Load Youtube IFrame Player API code asynchronously. This boat is going nowhere without it.
