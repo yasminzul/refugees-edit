@@ -140,7 +140,7 @@ h2 {
 }
 
 #join-convo.extra {
-	
+
     position: absolute;
     left: 18%;
     bottom: 29%;
@@ -187,7 +187,7 @@ h2 {
 .timeline-slide img {
   width: 45%;
   height: auto;
-  top: 24%;
+  top: 12%;
   object-fit: cover;
   position: absolute;
 }
@@ -250,7 +250,7 @@ h2 {
   color: #666666;
   margin: 15px 25px !important;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-family: sans-serif;
   line-height: 28px;
   font-weight: 400;
@@ -315,9 +315,9 @@ h2 {
 .timeline-slide__content {
   z-index: 5;
   position: absolute;
-  top: 220px;
-  width: 55%;
-  left: 78%;
+  top: 70px;
+  width: 45%;
+  left: 74%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
   opacity: 0;
@@ -332,8 +332,9 @@ h2 {
   padding: 15px 0;
   transition: opacity 1.2s;
   position: absolute;
-  right: 40%;
-  top: 24%;
+  left: 52%;
+  width: 45%;
+  top: 0%;
   opacity: 0;
 }
 .timeline-title {
