@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+body {
+	background-color: #000;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +17,6 @@ section {
 	background-color: #000;
 	height: 100vh;
 	width: 100vw;
-	margin: 0;
 	/*position: relative;*/
 }
 
@@ -393,6 +396,11 @@ h2 {
 	height: 33vh;
   }
 
+  .connector {
+  	top: 208px;
+
+  }
+
  /* .lp-title img {
   	width: 600px;
   }*/
@@ -428,14 +436,23 @@ h2 {
   }
 
   .timeline-year {
-  	right: 78%;
+  	left: 0;
+  	width: 100%;
     top: 0%;
+  }
+
+  .chin-right {
+  	width: 100%;
+  }
+
+  .chin-left {
+  	width: 100%;
   }
 }
 
 /*slideshow*/
 
-.slideshow {
+/*.slideshow {
 	width: 100%;
 }
 
@@ -446,6 +463,6 @@ h2 {
 
 .slideshow__item {
 	width: 100%;
-}
+}*/
 
 

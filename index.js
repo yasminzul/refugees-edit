@@ -19,7 +19,7 @@ $(function(){
          {
           breakpoint: 0,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 2,
           }
         }
