@@ -1,4 +1,5 @@
 $(function(){
+    
    $('.timeline-nav').slick({
       slidesToShow: 12,
       slidesToScroll: 1,
@@ -110,18 +111,8 @@ function buildHTML(data){ //Turns JSON data into HTML elements
 }
 
 function yptThumbHeight(){
-    const mq = window.matchMedia("(max-width : 500px)");
-    if(mq.matches){
-        ypt_thumbs.style.width = document.getElementById('player').clientWidth + 'px'; //change the height of the thumb list
-        //breaks if ypt_player.clientHeight + 'px';
-    }
-    
-    else
-    {
         ypt_thumbs.style.height = document.getElementById('player').clientHeight + 'px'; //change the height of the thumb list
-                //breaks if ypt_player.clientHeight + 'px';
-    }
- 
+                //breaks if ypt_player.clientHeight + 'px'; 
 }
 
 function onPlayerReady(event) { //Once the player is ready...

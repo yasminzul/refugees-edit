@@ -2,10 +2,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+    overflow-x: hidden;
 }
 
 body {
 	background-color: #000;
+    font-family: 'Merriweather', serif;
 }
 
 * {
@@ -23,18 +25,30 @@ section {
 h2 {
 	text-align: center;
 	color: #fff;
-	margin: 0;
+/*	margin: 0;*/
 	font-family: sans-serif;
     font-size: 1.8em;
-    padding-top: 5%;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
 }
 
 h3 {
 	color: #000;
 	margin: 0;
-	font-family: sans-serif;
     font-size: 1.8em;
     padding-top: 5%;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+}
+
+button
+{
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5em;
 }
 
 .landing {
@@ -43,6 +57,7 @@ h3 {
   	background-repeat: no-repeat; /* Do not repeat the image */
   	background-size: cover; /* Resize the background image to cover the entire container */
 }
+
 
 .title {
 	position: absolute;
@@ -66,20 +81,23 @@ h3 {
 	width: 45%;
     margin: 0 auto;
     margin-top: 25%;
+    text-align: center;
 }
 
 .logo {
-	text-align: center;
+	text-align: left;
 	position: absolute;
+    width: 100%;
 }
 
 .logo img {
-	width: 100px;
-	margin: 10px
+	width: 8%;
+	margin: 2% 2%;
 }
 
 .logo img:last-child {
-	width: 80px;
+	width: 5%;
+    margin: 1.5% 2% 2.5% 0;
 }
 
 .scroll {
@@ -91,9 +109,10 @@ h3 {
 /*chinup*/
 
 .chin-right {
-	width: 60%;
-	position: relative;
-	float: right;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0 !important;
+    
 }
 
 .chin-right img {
@@ -103,31 +122,43 @@ h3 {
 
 
 .chin-left {
-	width: 40%;	
-	position: relative;
-	float: left;
+	padding-right: 0 !important;
+    padding-left: 0 !important;
+    
 }
 
 .top, .middle, .bottom {
-	width: 100%;
+	width: 95%;
 	border: 1px solid #fff;
+    margin: 2.5%;
+}
+.top
+{
+    background-image: url(images/story-img.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.bottom
+{
+    background-image: url(images/chins-img.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .chin-left img {
-	width: 70%;
-    margin: 7% 14%;
+	width: 90%;
+    margin: 1% 5%;
 }
 
 #read-story.extra {
-    position: absolute;
-    left: 5%;
-    top: 23%;
-    width: 90%;
+    width: 70%;
     height: 40px;
+    margin: 25% 15% 3% 15%;
     background-color: #e13530;
     border: none;
-    font-family: sans-serif;
-    font-size: 1em;
     color: #fff;
     line-height: 40px;
     cursor: pointer;
@@ -135,15 +166,11 @@ h3 {
 }
 
 #learn-chins.extra {
-    position: absolute;
-    left: 5%;
-    bottom: 2%;
     height: 40px;
-    width: 90%;
+    width: 70%;
+    margin: 25% 15% 3% 15%;
     background-color: #e13530;
     border: none;
-    font-family: sans-serif;
-    font-size: 1em;
     color: #fff;
     line-height: 40px;
     cursor: pointer;
@@ -153,13 +180,11 @@ h3 {
 #join-convo.extra {
 
     position: absolute;
-    left: 18%;
-    bottom: 29%;
-    width: 28%;
+    left: 20%;
+    bottom: 31%;
+    width: 25%;
     background-color: #e13530;
     border: none;
-    font-size: 0.7em;
-
     color: #fff;
     line-height: 40px;
     cursor: pointer;
@@ -168,12 +193,22 @@ h3 {
 
 .content-wrapper {
 	position: absolute;
-    width: 35%;
-    right: 17%;
-    bottom: 33%;
+    width: 30%;
+    height: 100%;
+    right: 21%;
+    bottom: 0;
+    padding-top: 25%;
 }
 
+.content-wrapper h3
+{
+    font-size: 5vh;
+}
 
+.content-wrapper p
+{
+    font-size: 1.7vh;
+}
 
 
 /*timeline*/
@@ -248,8 +283,9 @@ h3 {
 	width: 100%;
 	height: 2px;
 	position: absolute;
-	top: 153px;
 	background-color:#666666;
+    position: relative;
+    bottom: 8px;
 }
 
 .timeline-nav__item {
@@ -325,12 +361,14 @@ h3 {
 }
 .timeline-slide__content {
   z-index: 5;
+/*
   position: absolute;
   top: 70px;
   width: 45%;
   left: 74%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
+*/
   opacity: 0;
   transition: opacity 1s;
 }
@@ -342,10 +380,12 @@ h3 {
   color: #ffffff;
   padding: 15px 0;
   transition: opacity 1.2s;
+/*
   position: absolute;
   left: 52%;
   width: 45%;
   top: 0%;
+*/
   opacity: 0;
 }
 .timeline-title {
@@ -375,19 +415,24 @@ h3 {
 	width: 100%;
 	height: 100vh;
     background-color: white;
+     padding: 5% 0 0 0;
+    margin: 0;
 }
 
-.wecud img {
+.header-wecud {
 	width: 100%;
     position: relative;
-    margin-top: -9%;
+    top: 8vh;
 }
 
-.wecud-left {
-	width: 35%;
-	position: absolute;
-	left: 10%;
+.wecud-right img {
+    padding: 0 5% 0 5%;
+    width: 100%;
 
+}
+
+.wecud-right {
+    
 }
 
 .p-btn {
@@ -406,6 +451,27 @@ h3 {
     cursor: pointer;
 }
 
+.footer-left
+{
+    margin-top: 25%;
+}
+
+.footer-logo
+{
+    width: 25%;
+    margin: 2%;
+}
+
+.footer-terms
+{
+    display: block;
+    margin: 2%
+}
+
+.footer-terms span
+{
+    display: block;
+}
 
 @media (min-width: 1080px) {
   .timeline .slick-list {
@@ -415,9 +481,20 @@ h3 {
 
 @media (max-width: 500px) {
 
+    section {
+	background-color: #000;
+	height: auto;
+	width: 100vw;
+	/*position: relative;*/
+}
 
   .landing {
-  	background-position: unset;
+      height: 100vh;
+    background-image: url("images/m-header-img.jpg");
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+  	background-position: top center;
+      background-color: #000;
   }
 
   .title {
@@ -433,7 +510,7 @@ h3 {
 	width: 100%;
     margin: 0 auto;
     padding: 9% 9% 24% 9%;
-    background-color: #000;
+    background-color: transparent;
   }
 
   .lp-title {
@@ -441,10 +518,6 @@ h3 {
 	height: 33vh;
   }
 
-  .connector {
-  	top: 208px;
-
-  }
 
  /* .lp-title img {
   	width: 600px;
@@ -487,14 +560,72 @@ h3 {
   	width: 100%;
     top: 0%;
   }
+    
+    .chinup-project img
+    {
+        width: 100%;
+    }
+    
+    .chinup-content
+    {
+        background-color: #fff;
+    }
+    
+    .chinup-wrap
+    {
+        padding: 2% 5%;
+    }
+    
+    .chinup-content button {
 
-  .chin-right {
-  	width: 100%;
-  }
+    background-color: #e13530;
+    border: none;
+    font-size: 0.7em;
+    width: 100%;
 
-  .chin-left {
-  	width: 100%;
-  }
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    }
+    
+    .wecud {
+	width: 100vw;
+	height: 100vh;
+    background-color: white;
+        padding: 20% 0;
+}
+
+.header-wecud {
+	width: 150%;
+    position: relative;
+    right: 35%;
+}
+
+.wecud-left {
+	width: 100%;
+	position: static;
+    padding: 2% 5%;
+
+}
+
+.p-btn {
+	
+    width: 100%;
+    background-color: #e13530;
+    border: none;
+    font-size: 1em;
+	height: 40px;
+	padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    line-height: 22px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+    
 }
 
 
@@ -589,6 +720,10 @@ h3 {
 }
 
 @media only screen and (max-width : 500px) {
+    .video-section
+    {
+        margin: 3% 0 20% 0;
+    }
 /*
   #ypt_thumbs {
     display: none;
@@ -596,8 +731,8 @@ h3 {
 */
 
 #ypt_thumbs {
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100%;
   background: #000;
   margin: 0;
@@ -610,29 +745,25 @@ h3 {
   margin: 0;
   position: relative;
   font-size: 0;
-    display: inline;
+    display: block;
 }
 
 #ypt_thumbs li img{
-  width: 35%;
+  width: 45%;
 }
 
 #ypt_thumbs li p {
   font-family: arial;
   font-size: 10px;
   background: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: block;
   position: absolute;
-  width: 100%;
+    left: 50%;
+  width: 50%;
   height: 100%;
   color: #fff;
-  padding: 5%;
+  padding: 3% 0%;
   margin: 0;
-}
-
-#ypt_thumbs li:hover p {
-  display: block;
-  cursor: pointer;
 }
 
 #ypt_thumbs .ypt-now-playing p {
