@@ -484,6 +484,11 @@ h3 {
 
 /* video */
 
+.video-section
+{
+    padding: 2% 5%;
+}
+
 #ypt_wrapper {
   width: 100%;
   background: #FFF;
