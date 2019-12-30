@@ -49,6 +49,7 @@ button
         font-style: normal;
         font-weight: 600;
         font-size: 1.5em;
+    background-color: #e00000;
 }
 
 .landing {
@@ -157,7 +158,6 @@ button
     width: 70%;
     height: 40px;
     margin: 25% 15% 3% 15%;
-    background-color: #e13530;
     border: none;
     color: #fff;
     line-height: 40px;
@@ -169,7 +169,6 @@ button
     height: 40px;
     width: 70%;
     margin: 25% 15% 3% 15%;
-    background-color: #e13530;
     border: none;
     color: #fff;
     line-height: 40px;
@@ -183,7 +182,6 @@ button
     left: 20%;
     bottom: 31%;
     width: 25%;
-    background-color: #e13530;
     border: none;
     color: #fff;
     line-height: 40px;
@@ -380,12 +378,9 @@ button
   color: #ffffff;
   padding: 15px 0;
   transition: opacity 1.2s;
-/*
-  position: absolute;
-  left: 52%;
-  width: 45%;
-  top: 0%;
-*/
+font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
   opacity: 0;
 }
 .timeline-title {
@@ -438,7 +433,7 @@ button
 .p-btn {
 	
     width: 95%;
-    background-color: #e13530;
+    background-color: #e00000;
     border: none;
     font-size: 1em;
 	height: 40px;
