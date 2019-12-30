@@ -482,6 +482,17 @@ font-family: rama-gothic-e, sans-serif;
 	width: 100vw;
 	/*position: relative;*/
 }
+    
+.logo img {
+	width: 20%;
+	margin: 3% 2% 1% 2%;
+}
+
+.logo img:last-child {
+	width: 13%;
+    margin: 1.5% 2% 2.5% 2%;
+}
+
 
   .landing {
       height: 100vh;
@@ -618,6 +629,27 @@ font-family: rama-gothic-e, sans-serif;
     display: block;
     cursor: pointer;
     text-align: center;
+}
+    .footer-left
+    {
+        text-align: center;
+    }
+    
+    .footer-logo
+{
+    width: 10%;
+    margin: 3%;
+}
+
+.footer-terms
+{
+    display: block;
+    margin: 2%;
+}
+
+.footer-terms span
+{
+    display: block;
 }
 
     
