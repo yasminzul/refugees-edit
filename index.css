@@ -384,10 +384,26 @@ h3 {
 }
 
 .wecud-left {
-	width: 45%;
+	width: 35%;
 	position: absolute;
 	left: 10%;
 
+}
+
+.p-btn {
+	
+    width: 95%;
+    background-color: #e13530;
+    border: none;
+    font-size: 1em;
+	height: 40px;
+	padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    line-height: 22px;
+    display: block;
+    cursor: pointer;
 }
 
 
