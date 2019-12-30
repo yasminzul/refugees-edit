@@ -14,6 +14,10 @@ body {
   box-sizing: border-box;
 }
 
+a
+{
+    color: #e00000;
+}
 
 section {
 	background-color: #000;
@@ -31,6 +35,7 @@ h2 {
     font-family: rama-gothic-e, sans-serif;
         font-style: normal;
         font-weight: 600;
+    line-height: 0.9;
 }
 
 h3 {
@@ -90,22 +95,31 @@ button
 	text-align: left;
 	position: absolute;
     width: 100%;
+    margin-left: 1%;
 }
 
-.logo img {
+.logo .rage {
 	width: 8%;
 	margin: 2% 2%;
 }
 
-.logo img:last-child {
+.logo .star {
 	width: 5%;
+	margin: 1.5% 2% 2.5% 0;
+}
+
+/*
+.logo a img:last-child {
+	width: %;
     margin: 1.5% 2% 2.5% 0;
 }
+*/
 
 .scroll {
 	position: absolute;
     bottom: 5%;
-    left: 50%;
+    left: 49%;
+    width: 2%;
 }
 
 /*chinup*/
@@ -253,6 +267,7 @@ button
 .timeline-nav
 {
     z-index: 20;
+    margin-top: 6%;
 }
 
 .timeline-slide img {
@@ -445,9 +460,9 @@ font-family: rama-gothic-e, sans-serif;
 
 .wecud {
 	width: 100%;
-	height: 80vh;
+	height: 90vh;
     background-color: white;
-     padding: 5% 0 0 0;
+     padding: 2.5% 0 0 0;
     margin: 0;
 }
 
@@ -458,7 +473,7 @@ font-family: rama-gothic-e, sans-serif;
 }
 
 .wecud-right img {
-    padding: 0 5% 0 15%;
+    padding: 3% 5% 0 15%;
     width: 90%;
     
 }
@@ -530,16 +545,32 @@ font-family: rama-gothic-e, sans-serif;
 	/*position: relative;*/
 }
     
-.logo img {
+    h2 span
+    {
+        display: block;
+    }
+    
+    .timeline-nav
+{
+    margin-top: 12%;
+}
+    
+.logo .rage  {
 	width: 20%;
 	margin: 3% 2% 1% 2%;
 }
 
-.logo img:last-child {
+.logo .star {
 	width: 13%;
     margin: 1.5% 2% 2.5% 2%;
 }
 
+    .scroll {
+	position: absolute;
+    bottom: 5%;
+    left: 47.5%;
+    width: 5%;
+}
 
   .landing {
       height: 100vh;
@@ -581,7 +612,27 @@ font-family: rama-gothic-e, sans-serif;
  /* .lp-title img {
   	width: 600px;
   }*/
+    
+    .instruction
+    {
+        position: absolute;
+        top: 25.5%;
+        right: 0%;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .instruction img
+    {
+        width: 45%;
+        margin-left: 12%;
+    }
 
+.timeline
+    {
+        margin-bottom: 0 !important;
+    }
+    
   .timeline-slide img {
   	display: none;
   }
@@ -668,9 +719,9 @@ font-family: rama-gothic-e, sans-serif;
     
     .wecud {
 	width: 100vw;
-	height: 100vh;
+	height: auto;
     background-color: white;
-        padding: 20% 0;
+        padding: 20% 8%;
 }
 
 .header-wecud {
@@ -682,16 +733,13 @@ font-family: rama-gothic-e, sans-serif;
 .wecud-left {
 	width: 100%;
 	position: static;
-    padding: 2% 5%;
 
 }
 
 .p-btn {
 	
     width: 100%;
-    background-color: #e13530;
     border: none;
-    font-size: 1em;
 	height: 40px;
 	padding: 10px;
     color: #fff;
@@ -707,6 +755,11 @@ font-family: rama-gothic-e, sans-serif;
     .footer-left
     {
         text-align: center;
+    }
+    
+    .rage-logo
+    {
+        width: 30%;
     }
     
     .footer-logo
@@ -734,16 +787,16 @@ font-family: rama-gothic-e, sans-serif;
 
 .video-section
 {
-    padding: 2% 5%;
+    padding: 0% 5%;
+    margin-bottom: 2.5% !important;
 }
 
 #ypt_wrapper {
   width: 100%;
-  background: #FFF;
+  background: #000;
   color: #000;
   overflow: hidden;
   max-width: 100%;
-  box-shadow: 0px 8px 13px rgba(0,0,0,0.5);
   margin-bottom: 1em;
 }
 
@@ -769,8 +822,8 @@ font-family: rama-gothic-e, sans-serif;
 }
 
 #ypt_thumbs li p {
-  font-family: arial;
-  font-size: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
   background: rgba(0, 0, 0, 0.7);
   display: none;
   position: absolute;
@@ -824,6 +877,7 @@ font-family: rama-gothic-e, sans-serif;
     .video-section
     {
         margin: 3% 0 20% 0;
+        height: auto;
     }
 /*
   #ypt_thumbs {
@@ -839,11 +893,12 @@ font-family: rama-gothic-e, sans-serif;
   margin: 0;
   padding: 0;
   height: 5%;
+    border: none;
 }
 
 #ypt_thumbs li {
   list-style: none;
-  margin: 0;
+  margin: 2% 0;
   position: relative;
   font-size: 0;
     display: block;
@@ -854,8 +909,8 @@ font-family: rama-gothic-e, sans-serif;
 }
 
 #ypt_thumbs li p {
-  font-family: arial;
-  font-size: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
   background: rgba(0, 0, 0, 0.7);
   display: block;
   position: absolute;

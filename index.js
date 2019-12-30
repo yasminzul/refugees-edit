@@ -111,8 +111,17 @@ function buildHTML(data){ //Turns JSON data into HTML elements
 }
 
 function yptThumbHeight(){
-        ypt_thumbs.style.height = document.getElementById('player').clientHeight + 'px'; //change the height of the thumb list
+    const mq = window.matchMedia("(orientation: landscape)");
+    if (mq.matches)
+        {
+             ypt_thumbs.style.height = document.getElementById('player').clientHeight + 'px'; //change the height of the thumb list
                 //breaks if ypt_player.clientHeight + 'px'; 
+        }
+    else
+        {
+            ypt_thumbs.style.height = (document.getElementById('player').clientHeight*1.75) + 'px';
+        }
+       
 }
 
 function onPlayerReady(event) { //Once the player is ready...
