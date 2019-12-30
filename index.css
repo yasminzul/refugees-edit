@@ -27,7 +27,7 @@ h2 {
 	color: #fff;
 /*	margin: 0;*/
 	font-family: sans-serif;
-    font-size: 1.8em;
+    font-size: 3em;
     font-family: rama-gothic-e, sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -36,7 +36,7 @@ h2 {
 h3 {
 	color: #000;
 	margin: 0;
-    font-size: 1.8em;
+    font-size: 3em;
     padding-top: 5%;
     font-family: rama-gothic-e, sans-serif;
         font-style: normal;
@@ -57,6 +57,7 @@ button
 	background-position: center; /* Center the image */
   	background-repeat: no-repeat; /* Do not repeat the image */
   	background-size: cover; /* Resize the background image to cover the entire container */
+    margin-bottom: 5vh;
 }
 
 
@@ -117,6 +118,7 @@ button
 }
 
 .chin-right img {
+    margin-top: 2%;
 	width: 100%;
 
 }
@@ -130,7 +132,7 @@ button
 
 .top, .middle, .bottom {
 	width: 95%;
-	border: 1px solid #fff;
+	border: 2px solid #505050;
     margin: 2.5%;
 }
 .top
@@ -141,17 +143,37 @@ button
     background-repeat: no-repeat;
 }
 
+.chin-left img
+{
+    width: 68%;
+    margin: 3% 16% 0 16%;
+}
+
+.middle p img
+{
+    width: 10%;
+    margin: 0 6%;
+}
+
+.middle p
+{
+    	text-align: center;
+	color: #fff;
+    font-size: 1.8em;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+    line-height: 2;
+    width: 50%;
+    margin: 0 25%;
+}
+
 .bottom
 {
     background-image: url(images/chins-img.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-}
-
-.chin-left img {
-	width: 90%;
-    margin: 1% 5%;
 }
 
 #read-story.extra {
@@ -228,6 +250,11 @@ button
 	bottom: 0;
 }
 
+.timeline-nav
+{
+    z-index: 20;
+}
+
 .timeline-slide img {
   width: 45%;
   height: auto;
@@ -274,6 +301,7 @@ button
 .timeline {
   width: 100%;
   position: relative;
+    margin-top: 15vh;
 }
 
 .connector {
@@ -283,7 +311,13 @@ button
 	position: absolute;
 	background-color:#666666;
     position: relative;
-    bottom: 8px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.single-tl
+{
+    margin-top: 8%;
 }
 
 .timeline-nav__item {
@@ -293,10 +327,12 @@ button
   opacity: 1;
   background: transparent;
   color: #666666;
-  margin: 15px 25px !important;
+  margin: 10px 25px 20px 25px !important;
   position: relative;
-  font-size: 16px;
-  font-family: sans-serif;
+  font-size: 19px;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
   line-height: 28px;
   font-weight: 400;
   outline: none;
@@ -309,8 +345,8 @@ button
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   background-color: #666666;
   transition: .2s;
@@ -318,6 +354,7 @@ button
 .timeline-nav__item.slick-current {
   color: #e1352f;
   opacity: 1;
+    font-size: 30px;
 }
 .timeline-nav__item.slick-current::before {
   background-color: #e1352f;
@@ -354,7 +391,7 @@ button
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #708cadcc;
+  background-color: #000000;
   z-index: 2;
 }
 .timeline-slide__content {
@@ -395,7 +432,7 @@ font-family: rama-gothic-e, sans-serif;
   color: #666666;
 }
 .timeline .slick-current:after {
-  background-color: rgba(0, 52, 113, 0);
+  display: none;
 }
 .timeline .slick-current .timeline-year {
   opacity: 1;
@@ -408,7 +445,7 @@ font-family: rama-gothic-e, sans-serif;
 
 .wecud {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
     background-color: white;
      padding: 5% 0 0 0;
     margin: 0;
@@ -421,9 +458,9 @@ font-family: rama-gothic-e, sans-serif;
 }
 
 .wecud-right img {
-    padding: 0 5% 0 5%;
-    width: 100%;
-
+    padding: 0 5% 0 15%;
+    width: 90%;
+    
 }
 
 .wecud-right {
@@ -432,18 +469,21 @@ font-family: rama-gothic-e, sans-serif;
 
 .p-btn {
 	
-    width: 95%;
+    width: 45%;
     background-color: #e00000;
     border: none;
-    font-size: 1em;
+    font-size: 1.5em;
 	height: 40px;
 	padding: 10px;
     color: #fff;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
     line-height: 22px;
     display: block;
     cursor: pointer;
+    text-align: center;
 }
 
 .footer-left
@@ -451,16 +491,23 @@ font-family: rama-gothic-e, sans-serif;
     margin-top: 25%;
 }
 
+.rage-logo
+{
+    width: 70%;
+    margin: 2%;
+}
+
 .footer-logo
 {
-    width: 25%;
+    width: 15%;
     margin: 2%;
 }
 
 .footer-terms
 {
     display: block;
-    margin: 2%
+    margin: 2%;
+    font-size: 1.35vh;
 }
 
 .footer-terms span
@@ -523,6 +570,12 @@ font-family: rama-gothic-e, sans-serif;
 	margin: 0;
 	height: 33vh;
   }
+    
+    .middle p
+{
+    width: 80%;
+    margin: 0 10%;
+}
 
 
  /* .lp-title img {
@@ -548,8 +601,20 @@ font-family: rama-gothic-e, sans-serif;
   }
 
   .timeline-text {
-  	color: #fff;
+  	color: #a0a0a0;
+      font-size: 16px;
+      line-height: 1.6;
   }
+    
+    .timeline-wrapper {
+  margin: 40px auto;
+}
+    
+/*
+.slick-prev:before, .slick-next:before
+    {
+        font-size: 28px;
+    }
 
   .slick-next {
   	top: 30%;
@@ -560,12 +625,22 @@ font-family: rama-gothic-e, sans-serif;
     top: 40%;
     left: unset;
   }
+*/
+   .slick-prev:before, .slick-next:before
+    {
+        display: none;
+    } 
 
   .timeline-year {
   	left: 0;
   	width: 100%;
     top: 0%;
   }
+    
+    .single-tl
+    {
+        margin-top: 0;
+    }
     
     .chinup-project img
     {
@@ -579,14 +654,11 @@ font-family: rama-gothic-e, sans-serif;
     
     .chinup-wrap
     {
-        padding: 2% 5%;
+        padding: 2% 5% 6% 5%;
     }
     
     .chinup-content button {
-
-    background-color: #e13530;
     border: none;
-    font-size: 0.7em;
     width: 100%;
 
     color: #fff;
@@ -624,7 +696,9 @@ font-family: rama-gothic-e, sans-serif;
 	padding: 10px;
     color: #fff;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: rama-gothic-e, sans-serif;
+        font-style: normal;
+        font-weight: 600;
     line-height: 22px;
     display: block;
     cursor: pointer;
