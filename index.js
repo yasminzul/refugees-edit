@@ -4,7 +4,7 @@ $(function(){
       slidesToShow: 12,
       slidesToScroll: 1,
       asNavFor: '.timeline-slider',
-      centerMode: false,
+      centerMode: true,
       focusOnSelect: true,
        mobileFirst: true,
       arrows: false,
@@ -21,10 +21,13 @@ $(function(){
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+              centerMode: false,
           }
         }
      ]
   });
+    
+    
   
    $('.timeline-slider').slick({
       slidesToShow: 1,
