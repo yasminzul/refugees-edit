@@ -49,6 +49,7 @@ h2 {
         font-style: normal;
         font-weight: 600;
     line-height: 0.9;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -68,6 +69,11 @@ button
         font-weight: 600;
         font-size: 1.5em;
     background-color: #e00000;
+}
+
+button:hover
+{
+    filter: brightness(70%);
 }
 
 .landing {
@@ -141,13 +147,17 @@ button
     position: relative;
     padding-right: 0;
     padding-left: 0 !important;
-    
+    opacity: 0.6;
+}
+
+.chin-right:hover
+{
+    opacity: 1;
 }
 
 .chin-right img {
     margin-top: 2%;
 	width: 100%;
-
 }
 
 
@@ -161,6 +171,7 @@ button
 	width: 95%;
 	border: 2px solid #505050;
     margin: 2.5%;
+    opacity: 0.6;
 }
 .top
 {
@@ -168,6 +179,10 @@ button
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+.top:hover, .middle:hover, .bottom:hover {
+    opacity: 1;
 }
 
 .chin-left img
@@ -536,6 +551,11 @@ font-family: rama-gothic-e, sans-serif;
     text-align: center;
 }
 
+.p-btn:hover
+{
+    filter: brightness(70%);
+}
+
 .footer-left
 {
     margin-top: 25%;
@@ -601,23 +621,17 @@ font-family: rama-gothic-e, sans-serif;
 }
 
     .scroll {
-	position: absolute;
-    bottom: 5%;
-    left: 47.5%;
-    width: 5%;
+	display: none;
 }
 
   .landing {
-      height: 100vh;
-    background-image: url("images/m-header-img.jpg");
-  	background-repeat: no-repeat; /* Do not repeat the image */
-  	background-size: cover; /* Resize the background image to cover the entire container */
-  	background-position: top center;
+      height: auto;
+    background-image: none;
       background-color: #000;
   }
 
   .title {
-	position: absolute;
+	position: relative;
 	right: 0;
     bottom: 0%;
     top: unset;
@@ -625,17 +639,28 @@ font-family: rama-gothic-e, sans-serif;
     width: 100%;
   }
 
-  .title-copy {
-	width: 100%;
+	.title-copy {
+	width: 80%;
     margin: 0 auto;
-    padding: 9% 9% 24% 9%;
-    background-color: transparent;
-  }
+    margin-top: 5%;
+    text-align: center;
+}
+
+    .main-image
+    {
+        width: 100%;
+    }
 
   .lp-title {
 	margin: 0;
 	height: 33vh;
   }
+    
+/*
+    .top, .middle, .bottom {
+    opacity: 1;
+}
+*/
     
     .middle p
 {
@@ -688,7 +713,7 @@ font-family: rama-gothic-e, sans-serif;
 
   .timeline-text {
   	color: #a0a0a0;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.6;
   }
     
@@ -696,37 +721,34 @@ font-family: rama-gothic-e, sans-serif;
   margin: 40px auto;
 }
     
-/*
 .slick-prev:before, .slick-next:before
     {
         font-size: 28px;
     }
 
   .slick-next {
-  	top: 30%;
+  	top: 5%;
   }
 
   .slick-prev {
-  	right: 2%;
-    top: 40%;
-    left: unset;
+  	top: 5%;
   }
-*/
    .slick-prev:before, .slick-next:before
     {
-        display: none;
+        
     } 
 
   .timeline-year {
-  	left: 0;
-  	width: 100%;
     top: 0%;
+      text-align: center;
+      display: block
   }
     
     .single-tl
     {
         margin-top: 0;
     }
+    
     
     .chinup-project img
     {
@@ -912,8 +934,13 @@ font-family: rama-gothic-e, sans-serif;
 @media only screen and (max-width : 500px) {
     .video-section
     {
-        margin: 3% 0 20% 0;
+        margin: 0 0 20% 0;
         height: auto;
+    }
+    
+    .video
+    {
+        margin-top: 5%;
     }
 /*
   #ypt_thumbs {

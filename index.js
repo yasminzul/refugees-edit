@@ -58,6 +58,39 @@ $(function(){
 });
 
 
+const mq = window.matchMedia("(orientation: landscape)");
+    if (mq.matches)
+        {
+            
+        }
+
+    else
+        {
+            $(function() {
+                
+                var documentEl = $(document),
+                    fadeElem = $('.elem');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > (elemOffsetTop-400) && currScrollPos < (elemOffsetTop))
+                            {$this.css('opacity', 1);}
+                        else 
+                            {
+                                $this.css('opacity', 0.6);
+                            }
+            }); 
+        });
+                
+    });        
+
+                 }
+
 /* video */
 
 // Load Youtube IFrame Player API code asynchronously. This boat is going nowhere without it.
