@@ -120,14 +120,16 @@ button:hover
     }
     
     .youtube-player .play {
-        height: 72px;
-        width: 72px;
+        height: 60px;
+        width: 60px;
         left: 50%;
         top: 50%;
         margin-left: -36px;
         margin-top: -36px;
         position: absolute;
-        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        background: url("/gfx/play.png") no-repeat;
+        background-size: contain;
+        background-position: center;
         cursor: pointer;
     }
 
@@ -502,14 +504,6 @@ button:hover
 }
 .timeline-slide__content {
   z-index: 5;
-/*
-  position: absolute;
-  top: 70px;
-  width: 45%;
-  left: 74%;
-  -webkit-transform: translate(-50%, 0px);
-          transform: translate(-50%, 0px);
-*/
   opacity: 0;
   transition: opacity 1s;
 }
@@ -674,7 +668,7 @@ font-family: rama-gothic-e, sans-serif;
 	.title-copy {
 	width: 80%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 0;
     text-align: center;
 }
 
@@ -707,12 +701,14 @@ font-family: rama-gothic-e, sans-serif;
 
 
 #read-story.extra {
-    margin: 30% 15% 3% 15%;
+    width: 94%;
+    margin: 55% 3% 3% 3%;
 
 }
 
 #learn-chins.extra {
-    margin: 30% 15% 3% 15%;
+    width: 94%;
+    margin: 55% 3% 3% 3%;
 
 }
 
@@ -915,39 +911,38 @@ font-family: rama-gothic-e, sans-serif;
 #ypt_thumbs {
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 20%;
+  width: 30%;
   background: #000;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 1%;
   height: 0;
 }
 
 #ypt_thumbs li {
   list-style: none;
-  margin: 0;
+  margin: 0 0 5% 0 ;
   position: relative;
   font-size: 0;
 }
 
 #ypt_thumbs li img{
-  width: 100%;
+  width: 40%;
 }
 
 #ypt_thumbs li p {
   font-family: 'Merriweather', serif;
   font-size: 12px;
   background: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: block;
   position: absolute;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: #fff;
   padding: 5%;
-  margin: 0;
+  margin: 0 0 0 40%;
 }
 
 #ypt_thumbs li:hover p {
-  display: block;
   cursor: pointer;
 }
 
@@ -970,9 +965,9 @@ font-family: rama-gothic-e, sans-serif;
 
 #ypt_wrapper .video {
   position: relative;
-  width: 80%;
-  /*height: 0;*/
-  padding-bottom: 48.4%;
+  width: 70%;
+  height: 0;
+  padding: 0 0 48.4% 0;
   float: left;
 }
 
@@ -983,7 +978,10 @@ font-family: rama-gothic-e, sans-serif;
   width: 100%;
   height: 100%;
   float:left;
+     padding: 0;
+    margin: 0;
 }
+
 
 @media only screen and (max-width : 500px) {
     .video-section
@@ -1060,4 +1058,15 @@ font-family: rama-gothic-e, sans-serif;
     width: 100%;
     padding-bottom: 56.25%;
   }
+}
+
+@media only screen and (max-width : 500px) and (orientation : landscape)
+
+    
+{
+    body
+    {
+        display: none;
+    }
+    
 }
