@@ -712,11 +712,6 @@ font-family: rama-gothic-e, sans-serif;
 
 }
 
-
-
- /* .lp-title img {
-  	width: 600px;
-  }*/
     
     .instruction
     {
@@ -994,11 +989,6 @@ font-family: rama-gothic-e, sans-serif;
     {
         margin-top: 5%;
     }
-/*
-  #ypt_thumbs {
-    display: none;
-  }
-*/
 
 #ypt_thumbs {
   overflow-y: scroll;
