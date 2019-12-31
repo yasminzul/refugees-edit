@@ -165,29 +165,6 @@ button:hover
     text-align: center;
 }
 
-.logo {
-	text-align: left;
-	position: absolute;
-    width: 100%;
-    margin-left: 1%;
-}
-
-.logo .rage {
-	width: 8%;
-	margin: 2% 2%;
-}
-
-.logo .star {
-	width: 5%;
-	margin: 1.5% 2% 2.5% 0;
-}
-
-/*
-.logo a img:last-child {
-	width: %;
-    margin: 1.5% 2% 2.5% 0;
-}
-*/
 
 .scroll {
 	position: absolute;
@@ -250,8 +227,13 @@ button:hover
 
 .middle p img
 {
-    width: 10%;
-    margin: 0 6%;
+    width: 7%;
+    margin: 0 3%;
+}
+
+.middle
+{
+    padding: 0 5%;
 }
 
 
@@ -259,13 +241,13 @@ button:hover
 {
     	text-align: center;
 	color: #fff;
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-family: rama-gothic-e, sans-serif;
         font-style: normal;
         font-weight: 600;
     line-height: 2;
-    width: 70%;
-    margin: 0 15%;
+    width: 55%;
+    margin: 0 22.5%;
 }
 
 .bottom
@@ -279,7 +261,7 @@ button:hover
 #read-story.extra {
     width: 70%;
     height: 40px;
-    margin: 25% 15% 3% 15%;
+    margin: 20% 15% 3% 15%;
     border: none;
     color: #fff;
     line-height: 40px;
@@ -290,7 +272,7 @@ button:hover
 #learn-chins.extra {
     height: 40px;
     width: 70%;
-    margin: 25% 15% 3% 15%;
+    margin: 20% 15% 3% 15%;
     border: none;
     color: #fff;
     line-height: 40px;
@@ -669,15 +651,6 @@ font-family: rama-gothic-e, sans-serif;
     margin-top: 12%;
 }
     
-.logo .rage  {
-	width: 20%;
-	margin: 3% 2% 1% 2%;
-}
-
-.logo .star {
-	width: 13%;
-    margin: 1.5% 2% 2.5% 2%;
-}
 
     .scroll {
 	display: none;
@@ -723,9 +696,26 @@ font-family: rama-gothic-e, sans-serif;
     
     .middle p
 {
-    width: 80%;
-    margin: 0 10%;
+    width: 70%;
+    margin: 0 15%;
 }
+    
+.middle
+{
+    padding: 0;
+}
+
+
+#read-story.extra {
+    margin: 30% 15% 3% 15%;
+
+}
+
+#learn-chins.extra {
+    margin: 30% 15% 3% 15%;
+
+}
+
 
 
  /* .lp-title img {
