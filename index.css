@@ -142,8 +142,8 @@ button:hover
 
 .title {
 	position: absolute;
-	right: 2%;
-	top: 3%;
+	right: 0;
+	top: 5%;
 	color: #fff;
 	width: 60%;
 }
@@ -154,14 +154,14 @@ button:hover
 }
 
 .lp-title img {
-	width: 100%;
-
+	width: 90%;
+    margin: 0 5%;
 }
 
 .title-copy {
 	width: 45%;
     margin: 0 auto;
-    margin-top: 25%;
+    margin-top: 20%;
     text-align: center;
 }
 
